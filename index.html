@@ -5,19 +5,38 @@
     <title>Pizza Order Form</title>
 </head>
 <body>
-
+<!-- Header -->
     <header>
         <h1>Order your pizza!</h1>
         <p>Freshly baked and delivered right to your door!</p>
     </header>
 
     <main>
-
+        <!-- Image -->
         <p>
             <img src="img/pizza.png" alt="A delicious cheese pizza" width=200 height=200 />
             Choose your perfect pizza below.
         </p>
 
+        <!-- Order form -->
+        <form action="#" method="post">
+            <!-- Customer Information -->
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="customer_name" required /><br /><br />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="customer_email" required /><br /><br />
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="customer_phone" required /><br /><br />
+
+                <label for="date">Delivery Date:</label>
+                <input type="date" id="date" name="delivery_date" /><br /><br />
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>
