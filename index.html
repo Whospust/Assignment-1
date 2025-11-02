@@ -73,7 +73,35 @@
                 <input type="checkbox" id="extra_cheese" name="toppings" value="extra_cheese" />
                 <label for="extra_cheese">Extra Cheese</label><br /><br />
             </fieldset>
+            <!-- Additional Options -->
+            <fieldset>
+                <legend>Additional Options</legend>
+
+                <label for="order_type">Order Type:</label><br />
+                <select id="order_type" name="order_type">
+                    <option value="delivery">Delivery</option>
+                    <option value="takeout">Take Out</option>
+                    <option value="eat_in">Eat In</option>
+                </select><br /><br />
+
+                <label for="instructions">Special Instructions:</label><br />
+                <textarea id="instructions" name="special_instructions" rows="4" cols="40"></textarea><br /><br />
+
+                <label for="spiciness">Spiciness Level:</label>
+                <input type="range" id="spiciness" name="spiciness" min="0" max="10" value="5" /><br /><br />
+
+                <label for="color">Choose Pizza Box Color:</label>
+                <input type="color" id="color" name="box_color" value="#ffcc00" /><br /><br />
+            </fieldset>
+
+            <!-- Submit -->
+            <input type="submit" value="Place Order" />
+            <input type="reset" value="Reset Form" />
         </form>
     </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pizza Palace. All rights reserved.</p>
+    </footer>
 </body>
 </html>
