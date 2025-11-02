@@ -36,6 +36,43 @@
                 <label for="date">Delivery Date:</label>
                 <input type="date" id="date" name="delivery_date" /><br /><br />
             </fieldset>
+            <!-- Pizza Details -->
+            <fieldset>
+                <legend>Pizza Details</legend>
+
+                <label for="size">Size (number of slices):</label>
+                <select id="size" name="pizza_size">
+                    <option value="small">Small (6 slices)</option>
+                    <option value="medium">Medium (8 slices)</option>
+                    <option value="large">Large (12 slices)</option>
+                </select><br /><br />
+
+                <label>Shape:</label><br />
+                <input type="radio" id="round" name="shape" value="round" checked />
+                <label for="round">Round</label><br />
+                <input type="radio" id="square" name="shape" value="square" />
+                <label for="square">Square</label><br /><br />
+
+                <label>Crust Type:</label><br />
+                <input type="radio" id="thin" name="crust" value="thin" />
+                <label for="thin">Thin Crust</label><br />
+                <input type="radio" id="deep" name="crust" value="deep" />
+                <label for="deep">Deep Dish</label><br />
+                <input type="radio" id="stuffed" name="crust" value="stuffed" />
+                <label for="stuffed">Stuffed Crust</label><br /><br />
+
+                <label>Toppings:</label><br />
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni" />
+                <label for="pepperoni">Pepperoni</label><br />
+                <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms" />
+                <label for="mushrooms">Mushrooms</label><br />
+                <input type="checkbox" id="olives" name="toppings" value="olives" />
+                <label for="olives">Olives</label><br />
+                <input type="checkbox" id="pineapple" name="toppings" value="pineapple" />
+                <label for="pineapple">Pineapple</label><br />
+                <input type="checkbox" id="extra_cheese" name="toppings" value="extra_cheese" />
+                <label for="extra_cheese">Extra Cheese</label><br /><br />
+            </fieldset>
         </form>
     </main>
 </body>
